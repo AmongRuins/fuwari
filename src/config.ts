@@ -142,7 +142,7 @@ export const umamiConfig: UmamiConfig = {
 // 防盗链/域名保护配置
 export const antiLeechConfig: AntiLeechConfig = {
 	enable: true,
-	officialSites: [{ url: "https://amongruins.eu.cc", name: "主站" }],
+	officialSites: [{ url: "amongruins.eu.cc", name: "主站" }],
 	debug: false,
 	warningTitle: "⚠️ 域名安全警告",
 	warningMessage:
