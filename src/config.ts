@@ -11,12 +11,12 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "Betsy Blog",
-	subtitle: "分享网络技术、服务器部署、Unity开发、AI技术应用与原理",
+	title: "AmongRuins Blog",
+	subtitle: "个人博客",
 	description:
-		"分享网络技术、服务器部署、Unity开发、AI技术应用与原理、作者为流转星(Betsy)",
+		"记录我所得知的知识，作者为萌傀儡(AmongRuins)",
 
-	keywords: [],
+	keywords: ['萌傀儡','博客','AmongRuins','Astro','Fuwari','Betsy','流转星'],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 361, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -32,12 +32,12 @@ export const siteConfig: SiteConfig = {
 			enable: true, // Display the credit text of the banner image
 			text: "Pixiv @chokei", // Credit text to be displayed
 
-			url: "https://img.micostar.cc/random", // (Optional) URL link to the original artwork or artist's page
+			url: "https://api.yppp.net/api.php", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	background: {
 		enable: true, // Enable background image
-		src: "https://img.micostar.cc/random", // 优先使用新 API
+		src: "https://api.yppp.net/api.php", // 优先使用新 API
 		position: "center", // Background position: 'top', 'center', 'bottom'
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
@@ -51,52 +51,38 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-			src: "https://image.cloudrunmax.top/file/CF/1756734381495_58fc963052f0a5cd8ce123b8d10c4a53.jpg", // Path of the favicon, relative to the /public directory
+			src: "/images/blog/favicon.ico", // Path of the favicon, relative to the /public directory
 			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		},
 	],
 	apps: [
 		{
-			name: "私人AI网站",
-			url: "https://ai0728.com.cn/",
-			image: "/favicon/openwebui.webp",
-			description: "智能对话与创作助手",
+			name: "夜轻Blog",
+			url: "https://blog.yeqing.net/acg-api/",
+			image: "https://list.yppp.net/d/cos/yeqing.webp",
+			description: "随机二次元图片API文档",
 			external: true,
 		},
 		{
-			name: "私人云盘",
-			url: "https://cloudrunmax.top/",
-			image: "/favicon/cloudreve.webp",
-			description: "内容管理入口",
+			name: "imgdiet",
+			url: "https://www.imgdiet.com/zh-CN",
+			image: "https://www.imgdiet.com/favicon-32x32.ico",
+			description: "在线图片处理工具",
 			external: true,
 		},
 		{
-			name: "私人图床",
-			url: "https://image.cloudrunmax.top/",
-			image: "/favicon/imagebed.webp",
-			description: "利用CloudflareR2搭建的私人图床",
+			name: "辰安图床",
+			url: "https://img.paiii.cn/",
+			image: "https://img.paiii.cn/assets/favicon.ico",
+			description: "永久免费在线图床",
 			external: true,
 		},
 		{
-			name: "私人AI绘图",
-			url: "https://aiimage.cloudrunmax.top/",
-			image: "/favicon/aiimage.webp",
-			description: "利用CloudflareWorker搭建的私人AI绘图",
-			external: true,
-		},
-		{
-			name: "私人AI提示词",
-			url: "https://aiprompt.ai0728.com.cn/",
-			image: "/favicon/aiprompt.webp",
-			description: "个人研究的较棒AI提示词集合",
-			external: true,
-		},
-		{
-			name: "提示词优化",
-			url: "https://prompt.micostar.cc",
-			image: "/favicon/prompts.webp",
-			description: "AI 提示词一键优化工具",
+			name: "GNAME",
+			url: "https://gname.vip/",
+			image: "https://file-sg.gname.net/f/favicon.ico",
+			description: "免费二级域名",
 			external: true,
 		},
 	],
@@ -110,25 +96,25 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Apps,
 		LinkPreset.Donate,
 		LinkPreset.Stats,
-		LinkPreset.Status,
-		LinkPreset.Monitor,
+		// LinkPreset.Status,
+		// LinkPreset.Monitor,
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "/images/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "流转星(Betsy)",
-	bio: ["爱我所爱，我们是彼此永远的动力"],
+	avatar: "/images/blog/avatar.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "萌傀儡(AmongRuins)",
+	bio: ["趁现在，享受短暂的人生吧！"],
 	links: [
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/420378171",
+			url: "https://space.bilibili.com/41476922",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Besty0728",
+			url: "https://github.com/AmongRuins",
 		},
 	],
 };
@@ -156,7 +142,7 @@ export const umamiConfig: UmamiConfig = {
 // 防盗链/域名保护配置
 export const antiLeechConfig: AntiLeechConfig = {
 	enable: true,
-	officialSites: [{ url: "https://www.micostar.cc", name: "主站" }],
+	officialSites: [{ url: "https://amongruins.eu.cc", name: "主站" }],
 	debug: false,
 	warningTitle: "⚠️ 域名安全警告",
 	warningMessage:

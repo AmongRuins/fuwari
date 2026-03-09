@@ -23,7 +23,7 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 	},
 	[LinkPreset.Stats]: {
 		name: "统计",
-		url: "https://umami.micostar.cc/share/X9ZZZ5l2xErS44Rc",
+		url: "https://cloud.umami.is/analytics/us/share/dzzB4lpmAQtqpe6Z",
 		external: true,
 	},
 	[LinkPreset.Status]: {
